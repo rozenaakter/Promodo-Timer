@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica;
+            height: 100vh;
+            margin: 0;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+
+        #timer {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            color: red;
+        }
+
+        .controls{
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Promodo Timer</h1>
+
+    <div class="container">
+    <div id="timer">25:00</div>
+    <br>
+    <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+</div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
